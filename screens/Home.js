@@ -1,6 +1,7 @@
 import React from 'react';
 import { Pressable } from 'react-native';
 import { View,StyleSheet, Text } from 'react-native';
+
 const Home=({ navigation})=> {
 
     const handlePress= ()=>{
@@ -8,7 +9,10 @@ const Home=({ navigation})=> {
     }
 
     return (
+       
+
         <View style={styles.container}>
+           
             <Text style={styles.text}>Home</Text>
             <Pressable
                 style={({pressed})=> ({ backgroundColor: pressed ? 'lightseagreen' : 'rebeccapurple' })}
